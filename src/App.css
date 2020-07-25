@@ -2,13 +2,134 @@
   text-align: center;
 }
 
+.profile-card-1 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  height: 100%;
+  border: none;
+}
+
+.profile-card-1 .background {
+  width: 100%;
+  vertical-align: top;
+  opacity: 0.9;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  -webkit-transform: scale(1.8);
+  transform: scale(2.8);
+}
+
+.profile-card-1 .card-content {
+  width: 100%;
+  padding: 15px 25px;
+  /* position: absolute; */
+  left: 0;
+  top: 50%;
+}
+
+.profile-card-1 .profile {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  max-width: 100%;
+  opacity: 1;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 1);
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+}
+
+.profile-card-1 h2 {
+  margin: 0 0 5px;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.profile-card-1 h2 small {
+  display: inline-block;
+  font-size: 15px;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+
+.display-3 {
+  font-size: 3.5rem !important;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+
+.jumbotron {
+    background-image: url("./media/origin2020bg.jpg");
+    background-size: cover;
+    /* font-family: Arial; */
+    color: white;
+    height: 100%;
+    /* font-weight: bold; */
+}
+
+
+.span {
+  color: red;
+}
+
+Input{
+  text-align: center;
+}
+
+
+.card-text {
+  color: white;
+}
+
+.white {
+  color: yellow !important;
+}
+
+.row {
+  padding: 30px;
+}
+
 .App-logo {
-  height: 40vmin;
+  height: 25vmin;
+  pointer-events: none;
+}
+.App-logo, .App-logo-rotate {
+  height: 25vmin;
   pointer-events: none;
 }
 
+.card-text {
+  color: #7e7e7e;
+  padding: 10px;
+}
+
+.CardImg {
+  border-bottom: 15px solid #f10202;
+} 
+
+.paragraph {
+  color: #f10202;
+}
+
+.card {
+  margin: 10px !important;
+  word-wrap: break-word;
+  background-color: #363636 !important;
+  background-clip: border-box;
+  border: 1px solid #f10202;
+  border-radius: 0rem !important;
+}
+
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .App-logo-rotate {
     animation: App-logo-spin infinite 20s linear;
   }
 }
@@ -28,6 +149,24 @@
   color: #61dafb;
 }
 
+.form-control {
+  border: 1px solid #f10202 !important;
+}
+
+.form-control:focus {
+  color: #f10202 !important;
+  background-color: #fff;
+  border-color: #f10202 !important;
+  outline: 0 !important;
+  box-shadow: 0 0 0 0.2rem rgb(255 0 0 / 25%) !important;
+}
+.span-tag {
+  background-color: #f10202;
+  line-height: 3;
+  padding: 10px;
+  font-weight: bold;
+  color: #ffffff !important;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +175,40 @@
     transform: rotate(360deg);
   }
 }
+@media screen and (max-width: 576px) {
+  .jumbotron {
+    background-size: contain;
+    border-bottom: 15px solid #f10202;
+  }
+ }
+
+ 
+@media screen and (min-width: 576px) {
+ 
+  .row {
+    padding: 5px;
+}
+.jumbotron {
+  border-bottom: 15px solid #f10202;
+}
+
+
+.card-body {
+  padding: 0rem !important;
+}
+.card {
+  margin: 0px !important;
+  background-color: #ffffff !important;
+  background-clip: border-box;
+  border: 3px solid #f10202;
+  border-radius: 0rem !important;
+}
+}
+
+/* New Media Queries */
+
+/* Big Screens - Hi-Res Laptops and Desktopo  */
+@media (min-width: 1281px) { }
+/* Desktop */
+/* Tablet */
+/* Mobile */
